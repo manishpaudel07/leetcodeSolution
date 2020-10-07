@@ -2,10 +2,16 @@ package com.leetcode;
 
 public class NoDuplicatesArray {
 	  public static int removeDuplicates(int[] nums) {
+		  //
 		  int noDuplicates = 1;
+		  
 	        for(int i = 1; i < nums.length; i++){
-	            if(nums[i] != nums[noDuplicates-1]){
-	                nums[noDuplicates++] = nums[i];
+	        		//comparing num[1] to nums[0]
+	        	if(nums[i] != nums[noDuplicates-1]){
+	               // if num[1] != num[0]
+	        		//nums[1]=num[0]; then noDuplicates increases
+	        		
+	        		nums[noDuplicates++] = nums[i];
 	            }
 	        }
 	    return noDuplicates;

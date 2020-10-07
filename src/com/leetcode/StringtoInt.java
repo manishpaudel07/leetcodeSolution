@@ -6,15 +6,12 @@ public class StringtoInt {
 
 	public static int myAtoi(String s)
 	{
-		int num=0;
-		try {
-			num=Integer.parseInt(s);
-		
-		}
-		catch(Exception e)
-		{
-			System.out.println(e);
-		}
+		int num;
+		s=s.trim();
+		if (s.length()==0)
+			return 0;
+		num = Integer.parseInt(s);
+
 		return num;
 	}
 	public static void main(String[] args) 
@@ -22,9 +19,10 @@ public class StringtoInt {
 		
 		Scanner scan=new Scanner(System.in);
 		String s=scan.nextLine();
+	
 		int result=myAtoi(s);
 		System.out.println(result);
-
+		
 	}
 
 }
