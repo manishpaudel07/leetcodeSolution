@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class StringtoInt {
 
 	public static int myAtoi(String s)
-	{
+	{	//Incomplete
 		int num;
 		s=s.trim();
 		if (s.length()==0)
