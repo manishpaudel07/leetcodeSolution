@@ -9,7 +9,7 @@ public class AddStrings {
 		 
 		 int sum=Math.addExact(Integer.parseInt(num1), Integer.parseInt(num2));
 		return String.valueOf(sum);
-		 
+		 //adding strings
 	 }
 	public static void main(String[] args) {
 
